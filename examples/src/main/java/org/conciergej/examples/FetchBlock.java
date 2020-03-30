@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
-import org.conciergej.core.*;
-import org.conciergej.params.TestNet3Params;
-import org.conciergej.store.BlockStore;
-import org.conciergej.store.MemoryBlockStore;
-import org.conciergej.utils.BriefLogFormatter;
+import org.catthisj.core.*;
+import org.catthisj.params.TestNet3Params;
+import org.catthisj.store.BlockStore;
+import org.catthisj.store.MemoryBlockStore;
+import org.catthisj.utils.BriefLogFormatter;
 
 import java.net.InetAddress;
 import java.util.concurrent.Future;

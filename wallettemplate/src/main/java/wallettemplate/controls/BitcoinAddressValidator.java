@@ -14,9 +14,9 @@
 
 package wallettemplate.controls;
 
-import org.conciergej.core.Address;
-import org.conciergej.core.AddressFormatException;
-import org.conciergej.core.NetworkParameters;
+import org.catthisj.core.Address;
+import org.catthisj.core.AddressFormatException;
+import org.catthisj.core.NetworkParameters;
 import javafx.scene.Node;
 import javafx.scene.control.TextField;
 import wallettemplate.utils.TextFieldValidator;

@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
-import org.conciergej.core.*;
-import org.conciergej.crypto.KeyCrypterException;
-import org.conciergej.kits.WalletAppKit;
-import org.conciergej.params.MainNetParams;
-import org.conciergej.params.RegTestParams;
-import org.conciergej.params.TestNet3Params;
-import org.conciergej.store.FlatDB;
-import org.conciergej.utils.BriefLogFormatter;
-import org.conciergej.wallet.Wallet;
-import org.conciergej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.catthisj.core.*;
+import org.catthisj.crypto.KeyCrypterException;
+import org.catthisj.kits.WalletAppKit;
+import org.catthisj.params.MainNetParams;
+import org.catthisj.params.RegTestParams;
+import org.catthisj.params.TestNet3Params;
+import org.catthisj.store.FlatDB;
+import org.catthisj.utils.BriefLogFormatter;
+import org.catthisj.wallet.Wallet;
+import org.catthisj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
@@ -87,7 +87,7 @@ public class ForwardingService {
         kit.wallet().addCoinsReceivedEventListener(new WalletCoinsReceivedEventListener() {
             @Override
             public void onCoinsReceived(Wallet w, Transaction tx, Coin prevBalance, Coin newBalance) {
-                // Runs in the dedicated "user thread" (see conciergej docs for more info on this).
+                // Runs in the dedicated "user thread" (see catthisj docs for more info on this).
                 //
                 // The transaction "tx" can either be pending, or included into a block (we didn't see the broadcast).
                 Coin value = tx.getValueSentToMe(w);

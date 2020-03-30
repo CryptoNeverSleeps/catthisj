@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
-import org.conciergej.core.listeners.PeerConnectedEventListener;
-import org.conciergej.core.listeners.PeerDisconnectedEventListener;
-import org.conciergej.core.NetworkParameters;
-import org.conciergej.core.Peer;
-import org.conciergej.core.PeerGroup;
-import org.conciergej.net.discovery.DnsDiscovery;
-import org.conciergej.params.MainNetParams;
-import org.conciergej.utils.BriefLogFormatter;
+import org.catthisj.core.listeners.PeerConnectedEventListener;
+import org.catthisj.core.listeners.PeerDisconnectedEventListener;
+import org.catthisj.core.NetworkParameters;
+import org.catthisj.core.Peer;
+import org.catthisj.core.PeerGroup;
+import org.catthisj.net.discovery.DnsDiscovery;
+import org.catthisj.params.MainNetParams;
+import org.catthisj.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 
 import javax.swing.*;

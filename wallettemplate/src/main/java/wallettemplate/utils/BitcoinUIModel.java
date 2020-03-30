@@ -14,10 +14,10 @@
 
 package wallettemplate.utils;
 
-import org.conciergej.core.listeners.DownloadProgressTracker;
-import org.conciergej.wallet.Wallet;
-import org.conciergej.wallet.listeners.WalletChangeEventListener;
-import org.conciergej.core.*;
+import org.catthisj.core.listeners.DownloadProgressTracker;
+import org.catthisj.wallet.Wallet;
+import org.catthisj.wallet.listeners.WalletChangeEventListener;
+import org.catthisj.core.*;
 import javafx.application.Platform;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.beans.property.ReadOnlyObjectProperty;

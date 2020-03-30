@@ -12,15 +12,15 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
-import org.conciergej.core.listeners.DownloadProgressTracker;
-import org.conciergej.core.*;
-import org.conciergej.net.discovery.DnsDiscovery;
-import org.conciergej.params.TestNet3Params;
-import org.conciergej.store.SPVBlockStore;
-import org.conciergej.wallet.DeterministicSeed;
-import org.conciergej.wallet.Wallet;
+import org.catthisj.core.listeners.DownloadProgressTracker;
+import org.catthisj.core.*;
+import org.catthisj.net.discovery.DnsDiscovery;
+import org.catthisj.params.TestNet3Params;
+import org.catthisj.store.SPVBlockStore;
+import org.catthisj.wallet.DeterministicSeed;
+import org.catthisj.wallet.Wallet;
 
 import java.io.File;
 

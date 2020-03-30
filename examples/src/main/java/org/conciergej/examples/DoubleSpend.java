@@ -12,19 +12,19 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
-import org.conciergej.core.listeners.PreMessageReceivedEventListener;
-import org.conciergej.core.*;
-import org.conciergej.kits.WalletAppKit;
-import org.conciergej.params.RegTestParams;
-import org.conciergej.utils.BriefLogFormatter;
-import org.conciergej.utils.Threading;
-import org.conciergej.wallet.Wallet;
+import org.catthisj.core.listeners.PreMessageReceivedEventListener;
+import org.catthisj.core.*;
+import org.catthisj.kits.WalletAppKit;
+import org.catthisj.params.RegTestParams;
+import org.catthisj.utils.BriefLogFormatter;
+import org.catthisj.utils.Threading;
+import org.catthisj.wallet.Wallet;
 
 import java.io.File;
 
-import static org.conciergej.core.Coin.*;
+import static org.catthisj.core.Coin.*;
 
 /**
  * This is a little test app that waits for a coin on a local regtest node, then  generates two transactions that double

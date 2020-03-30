@@ -15,22 +15,22 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import org.conciergej.core.*;
-import org.conciergej.kits.WalletAppKit;
-import org.conciergej.params.RegTestParams;
-import org.conciergej.protocols.channels.PaymentChannelClient;
-import org.conciergej.protocols.channels.PaymentChannelClientConnection;
-import org.conciergej.protocols.channels.StoredPaymentChannelClientStates;
-import org.conciergej.protocols.channels.ValueOutOfRangeException;
-import org.conciergej.utils.BriefLogFormatter;
-import org.conciergej.utils.Threading;
-import org.conciergej.wallet.Wallet;
-import org.conciergej.wallet.WalletExtension;
+import org.catthisj.core.*;
+import org.catthisj.kits.WalletAppKit;
+import org.catthisj.params.RegTestParams;
+import org.catthisj.protocols.channels.PaymentChannelClient;
+import org.catthisj.protocols.channels.PaymentChannelClientConnection;
+import org.catthisj.protocols.channels.StoredPaymentChannelClientStates;
+import org.catthisj.protocols.channels.ValueOutOfRangeException;
+import org.catthisj.utils.BriefLogFormatter;
+import org.catthisj.utils.Threading;
+import org.catthisj.wallet.Wallet;
+import org.catthisj.wallet.WalletExtension;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.util.concurrent.FutureCallback;
@@ -46,7 +46,7 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 
-import static org.conciergej.core.Coin.CENT;
+import static org.catthisj.core.Coin.CENT;
 
 /**
  * Simple client that connects to the given host, opens a channel, and pays one cent.

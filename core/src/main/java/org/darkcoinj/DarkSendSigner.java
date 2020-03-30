@@ -1,10 +1,10 @@
 package org.darkcoinj;
 
 import com.google.common.base.Charsets;
-import org.conciergej.core.*;
-import org.conciergej.crypto.KeyCrypterException;
-import org.conciergej.script.Script;
-import org.conciergej.script.ScriptBuilder;
+import org.catthisj.core.*;
+import org.catthisj.crypto.KeyCrypterException;
+import org.catthisj.script.Script;
+import org.catthisj.script.ScriptBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.util.encoders.Base64;

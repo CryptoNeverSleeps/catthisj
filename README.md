@@ -1,6 +1,6 @@
-### Welcome to conciergej
+### Welcome to catthisj
 
-The conciergej library is a Java implementation of the CCC protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of CCC Core. It comes with full documentation and some example apps showing how to use it.
+The catthisj library is a Java implementation of the CATS protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of CATS Core. It comes with full documentation and some example apps showing how to use it.
 
 ### Technologies
 
@@ -37,13 +37,13 @@ These are found in the `examples` module.
 
 #### Forwarding service
 
-This will download the block chain and eventually print a CCC address that it has generated.
+This will download the block chain and eventually print a CATS address that it has generated.
 
 If you send coins to that address, it will forward them on to the address you specified.
 
 ```
   cd examples
-  mvn exec:java -Dexec.mainClass=org.conciergej.examples.ForwardingService -Dexec.args="<insert a concierge address here>"
+  mvn exec:java -Dexec.mainClass=org.catthisj.examples.ForwardingService -Dexec.args="<insert a catthis address here>"
 
 ```
 

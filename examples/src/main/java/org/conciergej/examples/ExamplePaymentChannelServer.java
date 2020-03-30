@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import org.conciergej.core.Coin;
-import org.conciergej.core.NetworkParameters;
-import org.conciergej.core.Sha256Hash;
-import org.conciergej.core.VerificationException;
-import org.conciergej.kits.WalletAppKit;
-import org.conciergej.params.RegTestParams;
-import org.conciergej.protocols.channels.*;
-import org.conciergej.utils.BriefLogFormatter;
-import org.conciergej.wallet.WalletExtension;
+import org.catthisj.core.Coin;
+import org.catthisj.core.NetworkParameters;
+import org.catthisj.core.Sha256Hash;
+import org.catthisj.core.VerificationException;
+import org.catthisj.kits.WalletAppKit;
+import org.catthisj.params.RegTestParams;
+import org.catthisj.protocols.channels.*;
+import org.catthisj.utils.BriefLogFormatter;
+import org.catthisj.wallet.WalletExtension;
 
 import com.google.common.collect.ImmutableList;
 

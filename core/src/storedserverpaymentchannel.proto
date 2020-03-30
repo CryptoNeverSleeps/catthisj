@@ -24,7 +24,7 @@
 
 package paymentchannels;
 
-option java_package = "org.conciergej.protocols.channels";
+option java_package = "org.catthisj.protocols.channels";
 option java_outer_classname = "ServerState";
 
 

@@ -16,12 +16,12 @@ package wallettemplate;
 
 import com.google.common.util.concurrent.*;
 import javafx.scene.input.*;
-import org.conciergej.core.NetworkParameters;
-import org.conciergej.kits.WalletAppKit;
-import org.conciergej.params.*;
-import org.conciergej.utils.BriefLogFormatter;
-import org.conciergej.utils.Threading;
-import org.conciergej.wallet.DeterministicSeed;
+import org.catthisj.core.NetworkParameters;
+import org.catthisj.kits.WalletAppKit;
+import org.catthisj.params.*;
+import org.catthisj.utils.BriefLogFormatter;
+import org.catthisj.utils.Threading;
+import org.catthisj.wallet.DeterministicSeed;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -98,7 +98,7 @@ public class Main extends Application {
 
         // Make log output concise.
         BriefLogFormatter.init();
-        // Tell conciergej to run event handlers on the JavaFX UI thread. This keeps things simple and means
+        // Tell catthisj to run event handlers on the JavaFX UI thread. This keeps things simple and means
         // we cannot forget to switch threads when adding event handlers. Unfortunately, the DownloadListener
         // we give to the app kit is currently an exception and runs on a library thread. It'll get fixed in
         // a future version.

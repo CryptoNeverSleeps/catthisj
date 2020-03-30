@@ -12,16 +12,16 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
-import org.conciergej.core.*;
-import org.conciergej.kits.WalletAppKit;
-import org.conciergej.params.TestNet3Params;
-import org.conciergej.wallet.Wallet;
-import org.conciergej.wallet.Wallet.BalanceType;
+import org.catthisj.core.*;
+import org.catthisj.kits.WalletAppKit;
+import org.catthisj.params.TestNet3Params;
+import org.catthisj.wallet.Wallet;
+import org.catthisj.wallet.Wallet.BalanceType;
 
 import java.io.File;
 

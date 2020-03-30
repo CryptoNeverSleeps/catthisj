@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
-import org.conciergej.core.listeners.PeerConnectedEventListener;
-import org.conciergej.core.listeners.PeerDisconnectedEventListener;
-import org.conciergej.core.NetworkParameters;
-import org.conciergej.core.Peer;
-import org.conciergej.core.PeerAddress;
-import org.conciergej.core.VersionMessage;
-import org.conciergej.net.discovery.DnsDiscovery;
-import org.conciergej.net.discovery.PeerDiscoveryException;
-import org.conciergej.net.NioClientManager;
-import org.conciergej.params.MainNetParams;
-import org.conciergej.utils.BriefLogFormatter;
+import org.catthisj.core.listeners.PeerConnectedEventListener;
+import org.catthisj.core.listeners.PeerDisconnectedEventListener;
+import org.catthisj.core.NetworkParameters;
+import org.catthisj.core.Peer;
+import org.catthisj.core.PeerAddress;
+import org.catthisj.core.VersionMessage;
+import org.catthisj.net.discovery.DnsDiscovery;
+import org.catthisj.net.discovery.PeerDiscoveryException;
+import org.catthisj.net.NioClientManager;
+import org.catthisj.params.MainNetParams;
+import org.catthisj.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;

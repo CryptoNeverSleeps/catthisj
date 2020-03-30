@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
 import static org.fusesource.leveldbjni.JniDBFactory.*;
 

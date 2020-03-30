@@ -12,13 +12,13 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
-import org.conciergej.core.NetworkParameters;
-import org.conciergej.core.Utils;
-import org.conciergej.params.TestNet3Params;
-import org.conciergej.wallet.DeterministicSeed;
-import org.conciergej.wallet.Wallet;
+import org.catthisj.core.NetworkParameters;
+import org.catthisj.core.Utils;
+import org.catthisj.params.TestNet3Params;
+import org.catthisj.wallet.DeterministicSeed;
+import org.catthisj.wallet.Wallet;
 
 /**
  * The following example shows you how to create a deterministic seed from a hierarchical deterministic wallet represented as a mnemonic code.

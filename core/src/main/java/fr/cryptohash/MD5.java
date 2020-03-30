@@ -229,7 +229,7 @@ public class MD5 extends MDHelper {
 		C = D + circularLeft(C + I(D, A, B) + X[14] + 0xAB9423A7, 15);
 		B = C + circularLeft(B + I(C, D, A) + X[ 5] + 0xFC93A039, 21);
 		A = B + circularLeft(A + I(B, C, D) + X[12] + 0x655B59C3, 6);
-		D = A + circularLeft(D + I(A, B, C) + X[ 3] + 0x8F0CCC92, 10);
+		D = A + circularLeft(D + I(A, B, C) + X[ 3] + 0x8F0CATS92, 10);
 		C = D + circularLeft(C + I(D, A, B) + X[10] + 0xFFEFF47D, 15);
 		B = C + circularLeft(B + I(C, D, A) + X[ 1] + 0x85845DD1, 21);
 		A = B + circularLeft(A + I(B, C, D) + X[ 8] + 0x6FA87E4F, 6);

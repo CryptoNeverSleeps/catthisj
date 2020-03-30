@@ -17,5 +17,5 @@ after_success:
 
 notifications:
   irc:
-    channels: "irc.freenode.net#conciergej"
+    channels: "irc.freenode.net#catthisj"
     skip_join: true

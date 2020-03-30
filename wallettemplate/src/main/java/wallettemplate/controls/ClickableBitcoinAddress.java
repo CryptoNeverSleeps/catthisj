@@ -14,8 +14,8 @@
 
 package wallettemplate.controls;
 
-import org.conciergej.core.Address;
-import org.conciergej.uri.ConciergeURI;
+import org.catthisj.core.Address;
+import org.catthisj.uri.catThisURI;
 import de.jensd.fx.fontawesome.AwesomeDude;
 import de.jensd.fx.fontawesome.AwesomeIcon;
 import javafx.beans.binding.StringExpression;
@@ -85,7 +85,7 @@ public class ClickableBitcoinAddress extends AnchorPane {
     }
 
     public String uri() {
-        return ConciergeURI.convertToBitcoinURI(address.get(), null, Main.APP_NAME, null);
+        return catThisURI.convertToBitcoinURI(address.get(), null, Main.APP_NAME, null);
     }
 
     public Address getAddress() {

@@ -14,9 +14,9 @@
 
 package wallettemplate;
 
-import org.conciergej.core.Utils;
-import org.conciergej.crypto.MnemonicCode;
-import org.conciergej.wallet.DeterministicSeed;
+import org.catthisj.core.Utils;
+import org.catthisj.crypto.MnemonicCode;
+import org.catthisj.wallet.DeterministicSeed;
 import com.google.common.base.Splitter;
 import com.google.common.util.concurrent.Service;
 import javafx.application.Platform;
@@ -168,7 +168,7 @@ public class WalletSettingsController {
 
         long birthday = datePicker.getValue().atStartOfDay().toEpochSecond(ZoneOffset.UTC);
         DeterministicSeed seed = new DeterministicSeed(Splitter.on(' ').splitToList(wordsArea.getText()), null, "", birthday);
-        // Shut down conciergej and restart it with the new seed.
+        // Shut down catthisj and restart it with the new seed.
         Main.bitcoin.addListener(new Service.Listener() {
             @Override
             public void terminated(Service.State from) {

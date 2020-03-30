@@ -1,7 +1,7 @@
 package org.darkcoinj;
 
-import org.conciergej.core.NetworkParameters;
-import org.conciergej.core.TransactionInput;
+import org.catthisj.core.NetworkParameters;
+import org.catthisj.core.TransactionInput;
 
 /**
  * Created by Eric on 2/8/2015.

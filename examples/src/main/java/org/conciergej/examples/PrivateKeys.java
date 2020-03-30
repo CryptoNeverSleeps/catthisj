@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
-import org.conciergej.core.*;
-import org.conciergej.params.MainNetParams;
-import org.conciergej.store.MemoryBlockStore;
-import org.conciergej.wallet.Wallet;
+import org.catthisj.core.*;
+import org.catthisj.params.MainNetParams;
+import org.catthisj.store.MemoryBlockStore;
+import org.catthisj.wallet.Wallet;
 
 import java.math.BigInteger;
 import java.net.InetAddress;

@@ -16,11 +16,11 @@ my_address_text = "mzEjmna15T7DXj4HC9MBEG2UJzgFfEYtFo"
 # if it has a confirmed balance in it, then you can set it to 0.
 confirm_wait = 1
 
-from org.conciergej.core import *
+from org.catthisj.core import *
 
-import org.conciergej.crypto.KeyCrypterException
-import org.conciergej.params.MainNetParams
-from org.conciergej.kits import WalletAppKit
+import org.catthisj.crypto.KeyCrypterException
+import org.catthisj.params.MainNetParams
+from org.catthisj.kits import WalletAppKit
 
 from com.google.common.util.concurrent import FutureCallback
 from com.google.common.util.concurrent import Futures
@@ -73,7 +73,7 @@ class SenderListener(AbstractWalletEventListener):
         Futures.addCallback(tx.getConfidence().getDepthFuture(confirm_wait), myFutureCallback())
 
 if __name__ == "__main__":
-    params = org.conciergej.params.TestNet3Params.get()
+    params = org.catthisj.params.TestNet3Params.get()
     my_address = Address(params,my_address_text)
     filePrefix = "forwarding-service-testnet"
     f = java.io.File(".")

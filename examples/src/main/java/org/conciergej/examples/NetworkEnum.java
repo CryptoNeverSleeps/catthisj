@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
-import org.conciergej.core.NetworkParameters;
-import org.conciergej.params.MainNetParams;
-import org.conciergej.params.RegTestParams;
-import org.conciergej.params.TestNet3Params;
+import org.catthisj.core.NetworkParameters;
+import org.catthisj.params.MainNetParams;
+import org.catthisj.params.RegTestParams;
+import org.catthisj.params.TestNet3Params;
 
 public enum NetworkEnum {
     MAIN,

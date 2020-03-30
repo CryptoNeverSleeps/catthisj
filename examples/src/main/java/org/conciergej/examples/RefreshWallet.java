@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.conciergej.examples;
+package org.catthisj.examples;
 
-import org.conciergej.core.*;
-import org.conciergej.params.TestNet3Params;
-import org.conciergej.store.BlockStore;
-import org.conciergej.store.MemoryBlockStore;
-import org.conciergej.wallet.Wallet;
-import org.conciergej.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.catthisj.core.*;
+import org.catthisj.params.TestNet3Params;
+import org.catthisj.store.BlockStore;
+import org.catthisj.store.MemoryBlockStore;
+import org.catthisj.wallet.Wallet;
+import org.catthisj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import java.io.File;
 

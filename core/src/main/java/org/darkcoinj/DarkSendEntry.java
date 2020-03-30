@@ -1,6 +1,6 @@
 package org.darkcoinj;
 
-import org.conciergej.core.*;
+import org.catthisj.core.*;
 
 import java.util.ArrayList;
 

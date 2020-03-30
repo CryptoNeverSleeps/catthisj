@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.conciergej</groupId>
-  <artifactId>conciergej-parent</artifactId>
+  <groupId>org.catthisj</groupId>
+  <artifactId>catthisj-parent</artifactId>
   <version>0.14.3-12.1</version>
   <packaging>pom</packaging>
 
@@ -27,8 +27,8 @@
     <url>scm:git:https://github.com/bitcoinj/darkcoinj</url>
   </scm>
 
-  <name>conciergej Parent</name>
-  <description>Provides the common configuration for the conciergej modules</description>
+  <name>catthisj Parent</name>
+  <description>Provides the common configuration for the catthisj modules</description>
   <url>http://dash.org/dashj/</url>
 
   <licenses>
@@ -54,8 +54,8 @@
 
   <distributionManagement>
     <repository>
-      <id>bintray-concierge-Conciergej</id>
-      <name>dash-Conciergej</name>
+      <id>bintray-catthis-catThisj</id>
+      <name>dash-catThisj</name>
       <url>https://api.bintray.com/maven/dash/Dashj/org.dashj/;publish=1</url>
     </repository>
   </distributionManagement>

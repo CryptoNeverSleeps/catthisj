@@ -17,8 +17,8 @@
 package com.hashengineering.crypto;
 
 import com.google.common.io.ByteStreams;
-import org.conciergej.core.Sha256Hash;
-import org.conciergej.core.Utils;
+import org.catthisj.core.Sha256Hash;
+import org.catthisj.core.Utils;
 import org.spongycastle.util.encoders.Hex;
 
 import java.io.File;

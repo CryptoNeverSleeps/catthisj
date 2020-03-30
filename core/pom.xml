@@ -20,15 +20,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.conciergej</groupId>
-        <artifactId>conciergej-parent</artifactId>
+        <groupId>org.catthisj</groupId>
+        <artifactId>catthisj-parent</artifactId>
         <version>0.14.3-12.1</version>
     </parent>
 
-    <artifactId>conciergej-core</artifactId>
+    <artifactId>catthisj-core</artifactId>
 
     <name>dashj</name>
-    <description>A Java Concierge library</description>
+    <description>A Java catThis library</description>
 
     <packaging>jar</packaging>
 
@@ -203,7 +203,7 @@
                                         <urn>org.apache.maven.plugins:maven-jar-plugin:2.6:maven-plugin:null:runtime:618f08d0fcdd3929af846ef1b65503b5904f93e3</urn>
                                         <urn>org.apache.maven.plugins:maven-javadoc-plugin:2.10.2:maven-plugin:null:runtime:5f391697fa85cecc7e5bac7ce5a6f9d056a58ba3</urn>
                                         <urn>org.apache.maven.plugins:maven-resources-plugin:2.7:maven-plugin:null:runtime:94af11389943a480ecec7db01b4ded1b9cdf57c5</urn>
-                                        <urn>org.apache.maven.plugins:maven-shade-plugin:2.3:maven-plugin:null:runtime:d136adc7abccc9c12adcad6ae7a9bc51b2b7184b</urn>
+                                        <urn>org.apache.maven.plugins:maven-shade-plugin:2.3:maven-plugin:null:runtime:d136adc7abcats9c12adcad6ae7a9bc51b2b7184b</urn>
                                         <urn>org.apache.maven.plugins:maven-site-plugin:3.4:maven-plugin:null:runtime:659cd5f1dd8bff554cf52603339494cbf7f283c5</urn>
                                         <urn>org.apache.maven.plugins:maven-source-plugin:2.4:maven-plugin:null:runtime:46f0d7f7823d729ba300d3f8929900c7e9cb5ac0</urn>
                                         <urn>org.apache.maven.plugins:maven-surefire-plugin:2.19.1:maven-plugin:null:runtime:e2ee016ce9183ffa9e86c543690cadda7b3aea15</urn>
