@@ -98,7 +98,7 @@ public class MatiTest {
         Wallet wallet = Wallet.fromSeed(
                 networkParameters,
                 seed,
-                DeterministicKeyChain.KeyChainType.BIP44_CATS_ONLY
+                DeterministicKeyChain.KeyChainType.BIP44_CCC_ONLY
         );
 
         System.out.println("Wallet version: "+wallet.getVersion());
@@ -251,7 +251,7 @@ public class MatiTest {
         Wallet wallet = Wallet.fromSeed(
                 networkParameters,
                 seed,
-                DeterministicKeyChain.KeyChainType.BIP44_CATS_ONLY
+                DeterministicKeyChain.KeyChainType.BIP44_CCC_ONLY
         );
 
         DeterministicKey xpubKey = wallet.getWatchingKey();
@@ -261,7 +261,7 @@ public class MatiTest {
         System.out.println("chaincode: "+ Hex.toHexString(xpubKey.getChainCode()));
         System.out.println("first address: "+wallet.freshReceiveAddress().toBase58());
 
-        Wallet watchingWallet = Wallet.fromWatchingKeyB58(networkParameters,xpub,0, DeterministicKeyChain.KeyChainType.BIP44_CATS_ONLY);
+        Wallet watchingWallet = Wallet.fromWatchingKeyB58(networkParameters,xpub,0, DeterministicKeyChain.KeyChainType.BIP44_CCC_ONLY);
         DeterministicKey xpubKey2 = watchingWallet.getWatchingKey();
         System.out.println("Watching key:  "+xpubKey2.serializePubB58(networkParameters));
         System.out.println("key path: "+xpubKey2.getPathAsString());

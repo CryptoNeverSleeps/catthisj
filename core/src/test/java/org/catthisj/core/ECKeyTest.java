@@ -140,7 +140,7 @@ public class ECKeyTest {
             assertTrue(key.verify(message, output));
 
             output = HEX.decode(
-                    "304502206faa2ebc614bf4a0b31f0ce4ed9012eb193302ec2bcacats7ae8bb40577f47549022100c73a1a1acc209f3f860bf9b9f5e13e9433db6f8b7bd527a088a0e0cd0a4c83e9");
+                    "304502206faa2ebc614bf4a0b31f0ce4ed9012eb193302ec2bcaccc7ae8bb40577f47549022100c73a1a1acc209f3f860bf9b9f5e13e9433db6f8b7bd527a088a0e0cd0a4c83e9");
             assertTrue(key.verify(message, output));
         }
         
@@ -169,7 +169,7 @@ public class ECKeyTest {
             assertTrue(key.verify(message, output));
 
             output = HEX.decode(
-                    "304502206faa2ebc614bf4a0b31f0ce4ed9012eb193302ec2bcacats7ae8bb40577f47549022100c73a1a1acc209f3f860bf9b9f5e13e9433db6f8b7bd527a088a0e0cd0a4c83e9");
+                    "304502206faa2ebc614bf4a0b31f0ce4ed9012eb193302ec2bcaccc7ae8bb40577f47549022100c73a1a1acc209f3f860bf9b9f5e13e9433db6f8b7bd527a088a0e0cd0a4c83e9");
             assertTrue(key.verify(message, output));
         }
         

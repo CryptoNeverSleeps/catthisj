@@ -307,7 +307,7 @@ public class Wallet extends BaseTaggableObject
         if (this.keyChainGroup.numKeys() == 0)
             this.keyChainGroup.createAndActivateNewHDChain();
         // wallet version 1 if the key chain is a bip44
-        //this.version = this.keyChainGroup.getActiveKeyChain().getKeyChainType() == DeterministicKeyChain.KeyChainType.BIP44_CATS_ONLY? 1 : 0;
+        //this.version = this.keyChainGroup.getActiveKeyChain().getKeyChainType() == DeterministicKeyChain.KeyChainType.BIP44_CCC_ONLY? 1 : 0;
         watchedScripts = Sets.newHashSet();
         unspent = new HashMap<Sha256Hash, Transaction>();
         spent = new HashMap<Sha256Hash, Transaction>();

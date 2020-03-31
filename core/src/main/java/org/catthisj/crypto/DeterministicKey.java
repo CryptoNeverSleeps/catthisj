@@ -548,7 +548,7 @@ public class DeterministicKey extends ECKey {
                 // This can happen when deserializing an account key for a watching wallet.  In this case, we assume that
                 // the client wants to conceal the key's position in the hierarchy.  The path is truncated at the
                 // parent's node.
-                if (keyChainType == DeterministicKeyChain.KeyChainType.BIP44_CATS_ONLY){
+                if (keyChainType == DeterministicKeyChain.KeyChainType.BIP44_CCC_ONLY){
                     // this is for bip44 only
                     path = HDUtils.append(DeterministicKeyChain.BIP44_ACCOUNT_ZERO_PATH,childNumber);
                 }else

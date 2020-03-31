@@ -123,9 +123,9 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
 
     // CATS BIP44
     public static final ChildNumber BIP44_MASTER_KEY = new ChildNumber(44, true);
-    public static final ChildNumber CATS_PATH = new ChildNumber(119,true);
+    public static final ChildNumber CCC_PATH = new ChildNumber(119,true);
     public static final ImmutableList<ChildNumber> BIP44_ACCOUNT_ZERO_PATH =
-            ImmutableList.of(BIP44_MASTER_KEY, CATS_PATH, ChildNumber.ZERO_HARDENED);
+            ImmutableList.of(BIP44_MASTER_KEY, CCC_PATH, ChildNumber.ZERO_HARDENED);
 
     // We try to ensure we have at least this many keys ready and waiting to be handed out via getKey().
     // See docs for getLookaheadSize() for more info on what this is for. The -1 value means it hasn't been calculated
@@ -170,7 +170,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
 
     // Key Chain version to support BIP44 fixed without refactor this code too much
     public static enum KeyChainType{
-        BIP32,BIP44_CATS_ONLY
+        BIP32,BIP44_CCC_ONLY
     }
 
 
@@ -341,7 +341,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
     public DeterministicKeyChain(DeterministicKey watchingKey,KeyChainType keyChainType) {
         this.keyChainType = keyChainType;
         checkArgument(watchingKey.isPubKeyOnly(), "Private subtrees not currently supported: if you got this key from DKC.getWatchingKey() then use .dropPrivate().dropParent() on it first.");
-        if (keyChainType != KeyChainType.BIP44_CATS_ONLY)
+        if (keyChainType != KeyChainType.BIP44_CCC_ONLY)
             checkArgument( watchingKey.getPath().size() == getAccountPath().size(), "You can only watch an account key currently");
         basicKeyChain = new BasicKeyChain();
         this.seed = null;
@@ -480,7 +480,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
         switch (keyChainType){
             case BIP32:
                 return ACCOUNT_ZERO_PATH;
-            case BIP44_CATS_ONLY:
+            case BIP44_CCC_ONLY:
                 return BIP44_ACCOUNT_ZERO_PATH;
             default:
                 throw new IllegalStateException("Uknown keyChainType");
@@ -503,7 +503,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
     // Derives the account path keys and inserts them into the basic key chain. This is important to preserve their
     // order for serialization, amongst other things.
     private void initializeHierarchyUnencrypted(DeterministicKey baseKey) {
-        if (baseKey.isPubKeyOnly() && keyChainType == KeyChainType.BIP44_CATS_ONLY){
+        if (baseKey.isPubKeyOnly() && keyChainType == KeyChainType.BIP44_CCC_ONLY){
             externalParentKey = baseKey;
             internalParentKey = baseKey;
             addToBasicChain(externalParentKey);
@@ -707,7 +707,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
     public DeterministicKey getWatchingKey() {
         List<ChildNumber> childNumbers = Lists.newArrayList(getAccountPath());
         // first account only
-        if (keyChainType == KeyChainType.BIP44_CATS_ONLY){
+        if (keyChainType == KeyChainType.BIP44_CCC_ONLY){
             childNumbers.add(ChildNumber.ZERO);
         }
         return getKeyByPath(childNumbers,true);
@@ -873,7 +873,7 @@ public class DeterministicKeyChain implements EncryptableKeyChain {
                 path.add(new ChildNumber(i));
             if (!path.isEmpty() && path.get(0).equals(BIP44_MASTER_KEY)){
                 // is BIP44
-                keyChainType = KeyChainType.BIP44_CATS_ONLY;
+                keyChainType = KeyChainType.BIP44_CCC_ONLY;
                 break;
             }
         }
